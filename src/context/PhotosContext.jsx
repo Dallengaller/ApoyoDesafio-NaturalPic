@@ -1,7 +1,6 @@
 // PhotosContext.jsx
 import React, { createContext, useEffect, useState } from 'react';
 
-// Función para agregar la propiedad 'isFavorite' a cada foto
 export const addIsFavoriteProperty = (photos) => {
   return photos.map((photo) => ({
     ...photo,
@@ -16,7 +15,7 @@ const PhotosContextProvider = ({ children }) => {
   
   const [photos, setPhotos] = useState([]);
  
-  const apiUrl = 'https://api.pexels.com/v1/curated?per_page=9';
+  const apiUrl = 'https://api.pexels.com/v1/curated?per_page=15';
 
 
   const apiKey = 'D2W1sOhXKlH73h1iJXWMTuxopP50BtGAuIMcSbdaiFI16mdiADDnWA5T';

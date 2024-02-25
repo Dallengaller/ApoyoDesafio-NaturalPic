@@ -16,7 +16,9 @@ const Favorites = () => {
 
   return (
     <div>
+      <div className="favoritas">
       <h1>Fotos favoritas</h1>
+      </div>
       <div className="p-3 gallery grid-columns-4">
         {photos
           .filter((photo) => photo.isFavorite)

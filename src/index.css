@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-.App {
+.App, .favoritas {
   font-family: "Maitree", serif;
   text-align: center;
   color: #43a047;
