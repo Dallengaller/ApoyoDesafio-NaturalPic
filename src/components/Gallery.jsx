@@ -3,7 +3,6 @@ import React, { useContext } from 'react';
 import { PhotosContext} from '../context/PhotosContext';
 import IconHeart from './IconHeart';
 
-// Función para manejar la lógica de favoritos
 const addFavorite = (photos, id) => {
   return photos.map((photo) => {
     if (photo.id === id) {
@@ -17,7 +16,7 @@ const addFavorite = (photos, id) => {
 };
 
 const Gallery = () => {
-  // Accede al contexto para obtener las imágenes y la función setPhotos
+
   const { photos, setPhotos } = useContext(PhotosContext);
 
   return (
